@@ -1,5 +1,5 @@
 /* resets */
-body, h1, h2, h3, h4, h5, h6, figure, blockquote {
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   margin: 0;
 }
 
@@ -20,11 +20,27 @@ body, h1, h2, h3, h4, h5, h6, figure, blockquote {
   height: 838px;
   padding: 80px;
   box-shadow: 5px 5px 20px rgba(0.0, 0.0, 0.0, 0.10);
+  box-sizing: border-box;
 }
 
 .Page main {
   position: relative;
   height: 100%;
+}
+
+.Page footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 80px;
+  width: 100%;
+  padding: 0 80px;
+  padding-bottom: 18px;
+  color: #4C4C4C;
+  box-sizing: border-box;
 }
 
 .Page-next {
@@ -38,6 +54,16 @@ body, h1, h2, h3, h4, h5, h6, figure, blockquote {
 
 .Page-next:hover {
   background-color: azure;
+}
+
+/* standard */
+.Page--text h1 {
+  font-size: 3em;
+  margin-bottom: 12px;
+}
+
+.Page--text p + p {
+  margin-top: 1em;
 }
 
 /* title */
