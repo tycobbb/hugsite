@@ -1,0 +1,70 @@
+/* resets */
+body, h1, h2, h3, h4, h5, h6, figure, blockquote {
+  margin: 0;
+}
+
+/* container */
+.Hugkin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* pages */
+.Page {
+  position: relative;
+  width: 592px;
+  height: 838px;
+  padding: 80px;
+  box-shadow: 5px 5px 20px rgba(0.0, 0.0, 0.0, 0.10);
+}
+
+.Page main {
+  position: relative;
+  height: 100%;
+}
+
+.Page-next {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.Page-next:hover {
+  background-color: azure;
+}
+
+/* title */
+.Page--title main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Page--title h1 {
+  font-size: 6em;
+}
+
+.Page--title address {
+  position: absolute;
+  bottom: 0;
+  font-size: 1em;
+}
+
+/* quote */
+.Page--quote main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Page--quote figcaption {
+  margin-top: 40px;
+  text-align: right;
+}
