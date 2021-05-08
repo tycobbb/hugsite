@@ -9,17 +9,20 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-size: 18px;
+  font-size: min(18px, 1.92vh);
   font-family: "Noto Serif JP", serif;
 }
 
 /* pages */
 .Page {
-  overflow: hidden;
   position: relative;
-  width: 592px;
-  height: 838px;
-  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 63.58vh;
+  height: 90vh;
+  max-width: 592px;
+  max-height: 838px;
   box-shadow: 10px 10px 20px rgba(0.0, 0.0, 0.0, 0.10);
   box-sizing: border-box;
   border-radius: 4px;
@@ -28,6 +31,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
 .Page main {
   position: relative;
   height: 100%;
+  margin: 13.51%;
 }
 
 .Page footer {
@@ -37,10 +41,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 80px;
+  height: 9.59%;
   width: 100%;
-  padding: 0 80px;
-  padding-bottom: 18px;
+  padding: 0 13.51%;
+  padding-bottom: 2.15%;
   color: #4C4C4C;
   box-sizing: border-box;
 }
@@ -49,8 +53,8 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40px;
-  height: 40px;
+  width: 6.76%;
+  height: 4.77%;
   background-color: white;
 }
 
@@ -61,7 +65,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
 /* standard */
 .Page--text h1 {
   font-size: 3em;
-  margin-bottom: 12px;
+  margin-bottom: 5%;
 }
 
 .Page--text p + p {
@@ -93,18 +97,18 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
 }
 
 .Page--quote figcaption {
-  margin-top: 40px;
+  margin-top: 8%;
   text-align: right;
 }
 
-/* cards */
+/* cards 592 838 */
 .CardGrid {
   display: grid;
-  row-gap: 30px;
-  column-gap: 80px;
+  row-gap: 3.5%;
+  column-gap: 14%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 30px 60px;
+  padding: 4% 13% ;
 }
 
 .Card {
