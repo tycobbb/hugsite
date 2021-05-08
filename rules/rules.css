@@ -31,7 +31,21 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
 .Page main {
   position: relative;
   height: 100%;
-  margin: 13.51%;
+  padding: 13.51%;
+}
+
+.Page h1 {
+  font-size: 3em;
+  margin-bottom: 5%;
+}
+
+.Page h2 {
+  font-size: 2.2em;
+  margin-bottom: 5%;
+}
+
+.Page p + p {
+  margin-top: 1em;
 }
 
 .Page footer {
@@ -49,56 +63,49 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   box-sizing: border-box;
 }
 
+.Page-prev {
+  left: 0;
+}
+
 .Page-next {
+  right: 0;
+}
+
+.Page-prev, .Page-next {
   position: absolute;
   bottom: 0;
-  right: 0;
   width: 6.76%;
   height: 4.77%;
   background-color: white;
 }
 
-.Page-next:hover {
+.Page-prev:hover, .Page-next:hover {
   background-color: azure;
 }
 
-/* standard */
-.Page--text h1 {
-  font-size: 3em;
-  margin-bottom: 5%;
+/* centered */
+.Page-title main,.Page--centered main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.Page--text p + p {
-  margin-top: 1em;
+.Page--centered figcaption {
+  margin-top: 8%;
+  text-align: right;
 }
 
 /* title */
-.Page--title main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Page--title h1 {
+.Page--centered h1 {
   font-size: 6em;
+  margin-bottom: initial;
 }
 
-.Page--title address {
+.Page--centered address {
   position: absolute;
-  bottom: 0;
+  bottom: 9.55%;
   font-size: 1em;
-}
-
-/* quote */
-.Page--quote main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Page--quote figcaption {
-  margin-top: 8%;
-  text-align: right;
 }
 
 /* cards 592 838 */
@@ -106,9 +113,9 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   display: grid;
   row-gap: 3.5%;
   column-gap: 14%;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 4% 13% ;
+  grid-auto-flow: row;
+  padding: 4% 13%;
 }
 
 .Card {
