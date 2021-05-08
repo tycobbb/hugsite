@@ -96,3 +96,32 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   margin-top: 40px;
   text-align: right;
 }
+
+/* cards */
+.CardGrid {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 80px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 60px;
+}
+
+.Card {
+  border-radius: 4px;
+}
+
+.Card img {
+  width: 100%;
+}
+
+/* hugkins */
+.Softy, .Spiny {
+  color: transparent;
+  text-shadow: 0 0 0 red;
+}
+
+.Pokey, .Lumpy {
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
