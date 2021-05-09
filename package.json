@@ -1,0 +1,18 @@
+{
+  "name": "hugsite",
+  "version": "0.1",
+  "description": "no",
+  "main": "index.html",
+  "type": "module",
+  "repository": "git@github.com:tycobbb/hugsite.git",
+  "author": "ghost <ghost>",
+  "license": "ghosts-only",
+  "devDependencies": {
+    "chokidar": "^3.5.1",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "start": "node ./build/serve.mjs",
+    "build": "node ./build/build.mjs"
+  }
+}
