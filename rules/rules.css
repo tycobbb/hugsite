@@ -52,6 +52,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   margin-top: 1em;
 }
 
+.Page b {
+  font-weight: bold;
+}
+
 .Page footer {
   display: flex;
   justify-content: space-between;
@@ -112,12 +116,10 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
   font-size: 1em;
 }
 
+/* cards */
 .CardList {
   display: grid;
-  /* row-gap: 3.5%; */
-  /* column-gap: 14%; */
   grid-auto-flow: row;
-  /* padding: 4% 13%; */
 }
 
 .CardList--2w {
@@ -139,6 +141,11 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote {
 .Card figcaption {
   font-size: 0.6em;
   text-align: center;
+}
+
+/* terms */
+.Term {
+  font-weight: bold;
 }
 
 /* hugkins */
